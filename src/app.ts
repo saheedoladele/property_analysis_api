@@ -28,10 +28,27 @@ export function createApp(): Express {
   app.use(helmet());
 
   // CORS configuration
-  const corsOptions = {
-    origin: process.env.CORS_ORIGIN || 'https://propertyanalyzer.netlify.app',
+  const allowedOrigins = [
+    "https://propertyanalyzer.netlify.app",
+    "http://localhost:3000",
+    "http://localhost:5173"
+  ];
+
+  const corsOptions: cors.CorsOptions = {
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true); // allow Postman / server calls
+  
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   };
+  
   app.use(cors(corsOptions));
 
   // Body parser
