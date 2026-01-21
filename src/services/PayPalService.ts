@@ -47,8 +47,8 @@ export class PayPalService {
     this.tokenUrl = isProduction
       ? 'https://api-m.paypal.com'
       : 'https://api-m.sandbox.paypal.com';
-    this.clientId = process.env.PAYPAL_CLIENT_ID || '';
-    this.clientSecret = process.env.PAYPAL_CLIENT_SECRET || '';
+    this.clientId = 'Ae5rM1L7M_B-2wZ-T8YfPI-8GI4RgLVzWE6fAAfpvNK17UeM1JqsCKUALaa0t-LTDMt2j3jdox7hy_IG';
+    this.clientSecret =  'ELE_7Mo-W6VyTNuXXECNAbdxbxIF7kG-Z_DYAL1R2J1YnhkXnQsCSBhzQvjwX55sN7SGahijN7jYto0R';
 
     if (!this.clientId || !this.clientSecret) {
       throw new Error('PayPal credentials are not configured');
