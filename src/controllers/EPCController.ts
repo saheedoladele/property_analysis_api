@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { EPCService } from "../services/EPCService";
+import { EPCService } from "../services/EPCService.js";
 
 export class EPCController {
   private epcService: EPCService;

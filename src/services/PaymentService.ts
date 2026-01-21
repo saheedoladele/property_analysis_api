@@ -1,8 +1,8 @@
-import { PaymentRepository } from '../repositories/PaymentRepository';
-import { PayPalService } from './PayPalService';
-import { SubscriptionService } from './SubscriptionService';
-import { PaymentDto, CreatePaymentDto } from '../types';
-import { SubscriptionPlan } from '../entities/Subscription';
+import { PaymentRepository } from '../repositories/PaymentRepository.js';
+import { PayPalService } from './PayPalService.js';
+import { SubscriptionService } from './SubscriptionService.js';
+import { PaymentDto, CreatePaymentDto } from '../types/index.js';
+import { SubscriptionPlan } from '../entities/Subscription.js';
 
 export class PaymentService {
   private paymentRepository: PaymentRepository;

@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { AnalysisService } from "../services/AnalysisService";
+import { AnalysisService } from "../services/AnalysisService.js";
 
 export class AnalysisController {
   private analysisService: AnalysisService;

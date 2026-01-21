@@ -3,17 +3,17 @@
  * Export all calculators for easy importing
  */
 
-export * from './types';
-export * from './matchConfidence';
-export * from './dataCoverageScore';
-export * from './valuationRangeWrapper';
-export * from './askingPricePositioning';
-export * from './valuationConfidence';
-export * from './offerRecommendation';
-export * from './negotiationHeadroom';
-export * from './conditionDeduction';
-export * from './dealRiskScore';
-export * from './negotiationLeverageIndex';
-export * from './monthlyOwnershipCost';
-export * from './stressTest';
-export * from './bufferAdequacy';
+export * from './types.js';
+export * from './matchConfidence.js';
+export * from './dataCoverageScore.js';
+export * from './valuationRangeWrapper.js';
+export * from './askingPricePositioning.js';
+export * from './valuationConfidence.js';
+export * from './offerRecommendation.js';
+export * from './negotiationHeadroom.js';
+export * from './conditionDeduction.js';
+export * from './dealRiskScore.js';
+export * from './negotiationLeverageIndex.js';
+export * from './monthlyOwnershipCost.js';
+export * from './stressTest.js';
+export * from './bufferAdequacy.js';

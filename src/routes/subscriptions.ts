@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import { SubscriptionController } from '../controllers/SubscriptionController';
-import { authenticate } from '../middleware/auth';
-import { asyncHandler } from '../middleware/errorHandler';
-import { validate } from '../middleware/validation';
+import { SubscriptionController } from '../controllers/SubscriptionController.js';
+import { authenticate } from '../middleware/auth.js';
+import { asyncHandler } from '../middleware/errorHandler.js';
+import { validate } from '../middleware/validation.js';
 import { z } from 'zod';
-import { SubscriptionPlan } from '../types';
+import { SubscriptionPlan } from '../types/index.js';
 
 const router = Router();
 const subscriptionController = new SubscriptionController();

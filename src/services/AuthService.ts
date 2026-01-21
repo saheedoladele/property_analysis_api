@@ -1,6 +1,6 @@
-import { UserRepository } from '../repositories/UserRepository';
-import { hashPassword, verifyPassword, generateToken } from '../utils/auth';
-import { UserDto, RegisterDto, LoginDto, UpdateProfileDto, ChangePasswordDto } from '../types';
+import { UserRepository } from '../repositories/UserRepository.js';
+import { hashPassword, verifyPassword, generateToken } from '../utils/auth.js';
+import { UserDto, RegisterDto, LoginDto, UpdateProfileDto, ChangePasswordDto } from '../types/index.js';
 
 export class AuthService {
   private userRepository: UserRepository;

@@ -3,20 +3,20 @@ import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import dotenv from 'dotenv';
-import { errorHandler } from './middleware/errorHandler';
+import { errorHandler } from './middleware/errorHandler.js';
 
 // Import routes
-import authRoutes from './routes/auth';
-import propertyRoutes from './routes/properties';
-import analysisRoutes from './routes/analyses';
-import subscriptionRoutes from './routes/subscriptions';
-import paymentRoutes from './routes/payments';
-import dealAuditRoutes from './routes/dealAudits';
-import contactRoutes from './routes/contact';
-import postcodeRoutes from './routes/postcodes';
-import landRegistryRoutes from './routes/landRegistry';
-import epcRoutes from './routes/epc';
-import healthRoutes from './routes/health';
+import authRoutes from './routes/auth.js';
+import propertyRoutes from './routes/properties.js';
+import analysisRoutes from './routes/analyses.js';
+import subscriptionRoutes from './routes/subscriptions.js';
+import paymentRoutes from './routes/payments.js';
+import dealAuditRoutes from './routes/dealAudits.js';
+import contactRoutes from './routes/contact.js';
+import postcodeRoutes from './routes/postcodes.js';
+import landRegistryRoutes from './routes/landRegistry.js';
+import epcRoutes from './routes/epc.js';
+import healthRoutes from './routes/health.js';
 
 // Load environment variables
 dotenv.config();
@@ -29,7 +29,7 @@ export function createApp(): Express {
 
   // CORS configuration
   const corsOptions = {
-    origin: process.env.CORS_ORIGIN || 'http://localhost:5173',
+    origin: process.env.CORS_ORIGIN || 'https://propertyanalyzer.netlify.app',
     credentials: true,
   };
   app.use(cors(corsOptions));

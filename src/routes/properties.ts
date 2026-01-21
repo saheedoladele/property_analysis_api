@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { PropertyController } from "../controllers/PropertyController";
-import { PropertySearchController } from "../controllers/PropertySearchController";
-import { authenticate } from "../middleware/auth";
-import { asyncHandler } from "../middleware/errorHandler";
-import { validate } from "../middleware/validation";
+import { PropertyController } from "../controllers/PropertyController.js";
+import { PropertySearchController } from "../controllers/PropertySearchController.js";
+import { authenticate } from "../middleware/auth.js";
+import { asyncHandler } from "../middleware/errorHandler.js";
+import { validate } from "../middleware/validation.js";
 import { z } from "zod";
 
 const router = Router();

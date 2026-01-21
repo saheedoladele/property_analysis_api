@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { PropertySearchService } from "../services/PropertySearchService";
+import { PropertySearchService } from "../services/PropertySearchService.js";
 
 export class PropertySearchController {
   private propertySearchService: PropertySearchService;

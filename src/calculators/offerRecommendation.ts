@@ -1,4 +1,4 @@
-import { CalculatorResult, RiskAppetite } from './types';
+import { CalculatorResult, RiskAppetite } from './types.js';
 
 /**
  * Offer Recommendation Calculator

@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
-import { AppDataSource } from '../data-source';
-import { Subscription, SubscriptionStatus } from '../entities/Subscription';
+import { AppDataSource } from '../data-source.js';
+import { Subscription, SubscriptionStatus } from '../entities/Subscription.js';
 
 export class SubscriptionRepository {
   private repository: Repository<Subscription>;

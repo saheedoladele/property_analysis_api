@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
-import { AppDataSource } from '../data-source';
-import { DealAudit } from '../entities/DealAudit';
+import { AppDataSource } from '../data-source.js';
+import { DealAudit } from '../entities/DealAudit.js';
 
 export class DealAuditRepository {
   private repository: Repository<DealAudit>;

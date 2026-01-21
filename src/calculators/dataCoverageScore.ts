@@ -1,4 +1,4 @@
-import { CalculatorResult, ComparableData } from './types';
+import { CalculatorResult, ComparableData } from './types.js';
 
 /**
  * Data Coverage Score Calculator

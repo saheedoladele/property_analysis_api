@@ -1,5 +1,5 @@
-import { DealAuditRepository } from '../repositories/DealAuditRepository';
-import { DealAuditDto, CreateDealAuditDto } from '../types';
+import { DealAuditRepository } from '../repositories/DealAuditRepository.js';
+import { DealAuditDto, CreateDealAuditDto } from '../types/index.js';
 
 export class DealAuditService {
   private dealAuditRepository: DealAuditRepository;

@@ -1,4 +1,4 @@
-import { CalculatorResult, ChecklistInputs } from './types';
+import { CalculatorResult, ChecklistInputs } from './types.js';
 
 /**
  * Condition Deduction Calculator

@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
-import { AppDataSource } from '../data-source';
-import { Contact } from '../entities/Contact';
+import { AppDataSource } from '../data-source.js';
+import { Contact } from '../entities/Contact.js';
 
 export class ContactRepository {
   private repository: Repository<Contact>;

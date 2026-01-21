@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { EPCController } from "../controllers/EPCController";
-import { asyncHandler } from "../middleware/errorHandler";
+import { EPCController } from "../controllers/EPCController.js";
+import { asyncHandler } from "../middleware/errorHandler.js";
 
 const router = Router();
 const epcController = new EPCController();

@@ -6,10 +6,10 @@ import {
   UpdateDateColumn,
   OneToMany,
 } from "typeorm";
-import { Property } from "./Property";
-import { Analysis } from "./Analysis";
-import { Subscription } from "./Subscription";
-import { Payment } from "./Payment";
+import { Property } from "./Property.js";
+import { Analysis } from "./Analysis.js";
+import { Subscription } from "./Subscription.js";
+import { Payment } from "./Payment.js";
 
 @Entity("users")
 export class User {

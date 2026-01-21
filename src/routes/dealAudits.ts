@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { DealAuditController } from '../controllers/DealAuditController';
-import { optionalAuthenticate } from '../middleware/auth';
-import { asyncHandler } from '../middleware/errorHandler';
-import { validate } from '../middleware/validation';
+import { DealAuditController } from '../controllers/DealAuditController.js';
+import { optionalAuthenticate } from '../middleware/auth.js';
+import { asyncHandler } from '../middleware/errorHandler.js';
+import { validate } from '../middleware/validation.js';
 import { z } from 'zod';
 
 const router = Router();

@@ -8,8 +8,8 @@ import {
   JoinColumn,
   OneToMany,
 } from 'typeorm';
-import { User } from './User';
-import { Analysis } from './Analysis';
+import { User } from './User.js';
+import { Analysis } from './Analysis.js';
 
 @Entity('properties')
 export class Property {

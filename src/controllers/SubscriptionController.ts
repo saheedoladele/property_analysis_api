@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { SubscriptionService } from '../services/SubscriptionService';
+import { SubscriptionService } from '../services/SubscriptionService.js';
 
 export class SubscriptionController {
   private subscriptionService: SubscriptionService;

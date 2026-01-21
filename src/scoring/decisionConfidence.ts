@@ -1,4 +1,4 @@
-import { CalculatorResult } from '../calculators/types';
+import { CalculatorResult } from '../calculators/types.js';
 
 /**
  * Decision Confidence Score

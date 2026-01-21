@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import dotenv from 'dotenv';
-import { AppDataSource } from './config/database';
-import { createApp } from './app';
+import { AppDataSource } from './config/database.js';
+import { createApp } from './app.js';
 
 // Load environment variables
 dotenv.config();

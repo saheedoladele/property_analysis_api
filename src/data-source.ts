@@ -1,14 +1,12 @@
 import { DataSource } from "typeorm";
-import { User } from "./entities/User";
-import { Property } from "./entities/Property";
-import { Analysis } from "./entities/Analysis";
-import { Subscription } from "./entities/Subscription";
-import { Payment } from "./entities/Payment";
-import { DealAudit } from "./entities/DealAudit";
-import { Contact } from "./entities/Contact";
 import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
 
 dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export const AppDataSource = new DataSource({
   type: (process.env.DB_TYPE as any) || "postgres",
@@ -27,7 +25,8 @@ export const AppDataSource = new DataSource({
   
   synchronize: process.env.NODE_ENV !== "production",
   logging: process.env.NODE_ENV === "development",
-  entities: [User, Property, Analysis, Subscription, Payment, DealAudit, Contact],
-  migrations: ["src/migrations/**/*.ts"],
-  subscribers: ["src/subscribers/**/*.ts"],
+  // Use string paths to avoid circular dependency issues with ES modules
+  entities: [path.join(__dirname, "entities", "**", "*.js")],
+  migrations: [path.join(__dirname, "migrations", "**", "*.js")],
+  subscribers: [path.join(__dirname, "subscribers", "**", "*.js")],
 });

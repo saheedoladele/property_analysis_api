@@ -1,5 +1,5 @@
 /**
  * Scoring Engine Index
  */
-export * from './decisionConfidence';
-export * from './dealAttractiveness';
+export * from './decisionConfidence.js';
+export * from './dealAttractiveness.js';

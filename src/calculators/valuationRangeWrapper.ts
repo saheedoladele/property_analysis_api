@@ -1,4 +1,4 @@
-import { CalculatorResult, ValuationInputs } from './types';
+import { CalculatorResult, ValuationInputs } from './types.js';
 
 /**
  * Valuation Range Wrapper

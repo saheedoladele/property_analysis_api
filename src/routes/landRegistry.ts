@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { LandRegistryController } from "../controllers/LandRegistryController";
-import { asyncHandler } from "../middleware/errorHandler";
+import { LandRegistryController } from "../controllers/LandRegistryController.js";
+import { asyncHandler } from "../middleware/errorHandler.js";
 
 const router = Router();
 const landRegistryController = new LandRegistryController();

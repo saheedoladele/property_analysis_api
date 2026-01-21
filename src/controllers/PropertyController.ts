@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { PropertyService } from '../services/PropertyService';
+import { PropertyService } from '../services/PropertyService.js';
 
 export class PropertyController {
   private propertyService: PropertyService;

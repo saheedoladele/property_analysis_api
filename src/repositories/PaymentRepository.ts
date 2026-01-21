@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
-import { AppDataSource } from '../data-source';
-import { Payment } from '../entities/Payment';
+import { AppDataSource } from '../data-source.js';
+import { Payment } from '../entities/Payment.js';
 
 export class PaymentRepository {
   private repository: Repository<Payment>;

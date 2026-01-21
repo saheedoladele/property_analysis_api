@@ -1,8 +1,8 @@
-import { PropertyRepository } from '../repositories/PropertyRepository';
-import { PostcodeService } from './PostcodeService';
-import { LandRegistryService } from './LandRegistryService';
-import { EPCService } from './EPCService';
-import { PropertyDto, CreatePropertyDto, UpdatePropertyDto } from '../types';
+import { PropertyRepository } from '../repositories/PropertyRepository.js';
+import { PostcodeService } from './PostcodeService.js';
+import { LandRegistryService } from './LandRegistryService.js';
+import { EPCService } from './EPCService.js';
+import { PropertyDto, CreatePropertyDto, UpdatePropertyDto } from '../types/index.js';
 
 export class PropertyService {
   private propertyRepository: PropertyRepository;

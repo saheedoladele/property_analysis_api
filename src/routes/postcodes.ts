@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { PostcodeController } from "../controllers/PostcodeController";
-import { asyncHandler } from "../middleware/errorHandler";
-import { validate } from "../middleware/validation";
+import { PostcodeController } from "../controllers/PostcodeController.js";
+import { asyncHandler } from "../middleware/errorHandler.js";
+import { validate } from "../middleware/validation.js";
 import { z } from "zod";
 
 const router = Router();

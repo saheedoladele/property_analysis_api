@@ -7,7 +7,7 @@ import {
   ManyToOne,
   JoinColumn,
 } from 'typeorm';
-import { User } from './User';
+import { User } from './User.js';
 
 export enum SubscriptionPlan {
   FREE = 'free',

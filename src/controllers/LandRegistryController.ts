@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { LandRegistryService } from "../services/LandRegistryService";
+import { LandRegistryService } from "../services/LandRegistryService.js";
 
 export class LandRegistryController {
   private landRegistryService: LandRegistryService;

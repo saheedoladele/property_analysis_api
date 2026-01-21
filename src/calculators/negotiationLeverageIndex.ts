@@ -1,4 +1,4 @@
-import { CalculatorResult, LeverageFactors } from './types';
+import { CalculatorResult, LeverageFactors } from './types.js';
 
 /**
  * Negotiation Leverage Index Calculator

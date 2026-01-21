@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { ContactController } from '../controllers/ContactController';
-import { optionalAuthenticate } from '../middleware/auth';
-import { asyncHandler } from '../middleware/errorHandler';
-import { validate } from '../middleware/validation';
+import { ContactController } from '../controllers/ContactController.js';
+import { optionalAuthenticate } from '../middleware/auth.js';
+import { asyncHandler } from '../middleware/errorHandler.js';
+import { validate } from '../middleware/validation.js';
 import { z } from 'zod';
 
 const router = Router();

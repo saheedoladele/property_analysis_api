@@ -1,4 +1,4 @@
-import { CalculatorResult, FinanceInputs } from './types';
+import { CalculatorResult, FinanceInputs } from './types.js';
 
 /**
  * Stress Test Calculator

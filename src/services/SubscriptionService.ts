@@ -1,5 +1,5 @@
-import { SubscriptionRepository } from '../repositories/SubscriptionRepository';
-import { SubscriptionDto, CreateSubscriptionDto, SubscriptionPlan, SubscriptionStatus } from '../types';
+import { SubscriptionRepository } from '../repositories/SubscriptionRepository.js';
+import { SubscriptionDto, CreateSubscriptionDto, SubscriptionPlan, SubscriptionStatus } from '../types/index.js';
 
 export class SubscriptionService {
   private subscriptionRepository: SubscriptionRepository;

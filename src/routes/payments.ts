@@ -1,11 +1,11 @@
 import { Router, Request, Response } from 'express';
-import { PaymentController } from '../controllers/PaymentController';
-import { authenticate } from '../middleware/auth';
-import { asyncHandler } from '../middleware/errorHandler';
-import { validate } from '../middleware/validation';
+import { PaymentController } from '../controllers/PaymentController.js';
+import { authenticate } from '../middleware/auth.js';
+import { asyncHandler } from '../middleware/errorHandler.js';
+import { validate } from '../middleware/validation.js';
 import { z } from 'zod';
-import { PaymentService } from '../services/PaymentService';
-import { PayPalService } from '../services/PayPalService';
+import { PaymentService } from '../services/PaymentService.js';
+import { PayPalService } from '../services/PayPalService.js';
 
 const router = Router();
 const paymentController = new PaymentController();

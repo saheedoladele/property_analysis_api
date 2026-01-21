@@ -7,8 +7,8 @@ import {
   ManyToOne,
   JoinColumn,
 } from "typeorm";
-import { User } from "./User";
-import { Property } from "./Property";
+import { User } from "./User.js";
+import { Property } from "./Property.js";
 
 @Entity("analyses")
 export class Analysis {

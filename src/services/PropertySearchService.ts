@@ -3,9 +3,9 @@
  * Combines Land Registry, EPC, and Postcode data for comprehensive property search
  */
 
-import { PostcodeService } from './PostcodeService';
-import { LandRegistryService } from './LandRegistryService';
-import { EPCService } from './EPCService';
+import { PostcodeService } from './PostcodeService.js';
+import { LandRegistryService } from './LandRegistryService.js';
+import { EPCService } from './EPCService.js';
 
 export interface PropertySearchResult {
   id: string;

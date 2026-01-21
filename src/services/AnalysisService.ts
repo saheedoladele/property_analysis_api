@@ -1,5 +1,5 @@
-import { AnalysisRepository } from "../repositories/AnalysisRepository";
-import { AnalysisDto, CreateAnalysisDto, UpdateAnalysisDto } from "../types";
+import { AnalysisRepository } from "../repositories/AnalysisRepository.js";
+import { AnalysisDto, CreateAnalysisDto, UpdateAnalysisDto } from "../types/index.js";
 
 export class AnalysisService {
   private analysisRepository: AnalysisRepository;

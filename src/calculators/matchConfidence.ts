@@ -1,4 +1,4 @@
-import { CalculatorResult } from './types';
+import { CalculatorResult } from './types.js';
 
 /**
  * Match Confidence Calculator

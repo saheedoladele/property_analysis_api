@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { DealAuditService } from '../services/DealAuditService';
+import { DealAuditService } from '../services/DealAuditService.js';
 
 export class DealAuditController {
   private dealAuditService: DealAuditService;

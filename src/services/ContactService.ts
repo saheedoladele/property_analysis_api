@@ -1,5 +1,5 @@
-import { ContactRepository } from '../repositories/ContactRepository';
-import { ContactDto, CreateContactDto } from '../types';
+import { ContactRepository } from '../repositories/ContactRepository.js';
+import { ContactDto, CreateContactDto } from '../types/index.js';
 
 export class ContactService {
   private contactRepository: ContactRepository;

@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { ContactService } from '../services/ContactService';
+import { ContactService } from '../services/ContactService.js';
 
 export class ContactController {
   private contactService: ContactService;

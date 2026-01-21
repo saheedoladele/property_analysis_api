@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { PostcodeService } from "../services/PostcodeService";
+import { PostcodeService } from "../services/PostcodeService.js";
 
 export class PostcodeController {
   private postcodeService: PostcodeService;

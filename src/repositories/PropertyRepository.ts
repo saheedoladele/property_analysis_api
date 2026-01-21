@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
-import { AppDataSource } from '../data-source';
-import { Property } from '../entities/Property';
+import { AppDataSource } from '../data-source.js';
+import { Property } from '../entities/Property.js';
 
 export class PropertyRepository {
   private repository: Repository<Property>;
