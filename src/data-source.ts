@@ -9,13 +9,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export const AppDataSource = new DataSource({
-  type: (process.env.DB_TYPE as any) || "postgres",
-  host: process.env.DB_HOST || "localhost",
-  port: parseInt(process.env.DB_PORT || "5432"),
-  username: process.env.DB_USERNAME || "saheedbaba",
-  password: process.env.DB_PASSWORD || "saheed123",
-  database: process.env.DB_DATABASE || "property_db",
-
+  type: "postgres",
+  // Use connection string if provided, otherwise fall back to individual config
+  url: process.env.DATABASE_URL || "postgresql://saheedbaba:nkY3b7r34pE6HmzGUIONsHKNKq9rO93i@dpg-d5l0p4mmcj7s73a9u8s0-a.oregon-postgres.render.com/property_db_acrj",
   ssl: true,
   extra: {
     ssl: {
